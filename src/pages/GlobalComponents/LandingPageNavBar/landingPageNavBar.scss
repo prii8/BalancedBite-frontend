@@ -1,0 +1,110 @@
+@import "../../../utils/variables";
+
+.nav-class {
+    position: fixed;
+    align-self: flex-start;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    z-index: 2;
+    margin-bottom: 2rem;
+}
+
+.navbar-homepage {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-left: 3vw;
+    padding-right: 3vw;
+
+    .logo-homepage {
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 1vh 1vw;
+        font-family: $Oswald;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: $brandColor1;
+        }
+
+        .paragraph {
+            font-size: 2.5rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .logo{
+            width: 8%;
+        }
+    }
+
+    .links {
+        width: max-content;
+        justify-content: center;
+        align-content: center;
+        padding: 3vh 0;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 40vw;
+        }
+
+        li {
+            list-style: none;
+            margin: 0;
+        }
+
+        a {
+            font-family: $Roboto, $Oswald;
+            color: $textColor1;
+            text-decoration: none;
+            font-size: 1vw;
+
+        }
+    }
+
+    .button-group-homepage {
+        display: flex;
+        align-items: baseline;
+        padding-top: 3vh 0;
+        margin-left: 3rem;
+
+        .signin-button {
+            border: none;
+            background-color: white;
+            width: max-content;
+            font-family: $Roboto;
+            font-size: 1.2vw;
+            font-weight: 400;
+            margin-right: 3vw;
+            margin-top: 2.5vh;
+            cursor: pointer;
+        }
+
+        .signup-button {
+            margin-top: 1.5vh;
+            background-color: white;
+            color: $brandColor1;
+            font-weight: 500;
+            font-size: 1.1vw;
+            width: 10vw;
+            height: inherit;
+            padding: 1vh 1vw;
+            border-radius: 50px;
+            border-width: 1px;
+            border: 1px solid $brandColor1;
+            font-family: $Roboto;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+}

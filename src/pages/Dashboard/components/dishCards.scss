@@ -1,0 +1,329 @@
+@import "../../../utils/variables";
+
+.dishCards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+
+    .dishCard {
+        width: 25%;
+        height: 31rem;
+        border-radius: 0.5rem;
+        background: $white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .fav-button {
+            position: absolute;
+            display: flex;
+            justify-self: right;
+            z-index: 2;
+            right: 0;
+            background: transparent;
+            margin: 1rem;
+
+            .fav-logo-card {
+                font-size: 2rem;
+                border-color: 2px solid $danger;
+                color: $textColor3;
+            }
+        }
+
+        .unfav-button {
+            position: absolute;
+            display: flex;
+            justify-self: right;
+            z-index: 2;
+            right: 0;
+            background: transparent;
+            margin: 1rem;
+
+            .unfav-logo-card {
+                font-size: 2rem;
+                border-color: $white;
+                color: $danger;
+            }
+        }
+
+        .recipeImage {
+            position: relative;
+            width: 100%;
+            height: 20rem;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+
+        .dishCardFirstRow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1rem;
+
+            .dishCardInfo {
+                .dishTitle {
+                    font-family: $Roboto;
+                    font-weight: 500;
+                    color: $textColor1;
+                    font-size: 1.25rem;
+                }
+
+                .dishPrice {
+                    margin-top: 0.5rem;
+                    font-weight: 400;
+                    color: $textColor2;
+                }
+            }
+
+            .dishCardAddBtnContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: $brandColor3;
+
+                .dishCardAddBtn {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    outline: none;
+                    border-radius: 50%;
+                    height: 2rem;
+                    width: 2rem;
+                    background: $brandColor3;
+                    color: $white;
+                    font-size: 2rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        .dishCardViewButton {
+            cursor: pointer;
+            background: $brandColor1;
+            width: calc(100% - 2rem);
+            // margin: 1rem;
+            margin: 1rem;
+            border: none;
+            outline: none;
+            border-radius: 1rem;
+            color: $white;
+            font-family: $Roboto;
+            font-size: 1.25rem;
+            padding: 0.5rem 0.5rem;
+            font-weight: 500;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .dishCards {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+
+        .dishCard {
+            width: 25%;
+            height: min-content;
+            border-radius: 0.5rem;
+            background: $white;
+
+            .recipeImage {
+                width: 100%;
+                height: 50%;
+                border-radius: 0.5rem 0.5rem 0 0;
+            }
+
+            .dishCardFirstRow {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .dishCardInfo {
+                    .dishTitle {
+                        font-family: $Roboto;
+                        font-weight: 500;
+                        color: $textColor1;
+                        font-size: 1rem;
+                    }
+
+                    .dishPrice {
+                        font-weight: 400;
+                        color: $textColor2;
+                        font-size: 0.85rem;
+                    }
+                }
+
+                .dishCardAddBtnContainer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    color: $brandColor3;
+
+                    .dishCardAddBtn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: none;
+                        outline: none;
+                        border-radius: 50%;
+                        height: 2rem;
+                        width: 2rem;
+                        background: $brandColor3;
+                        color: $white;
+                        font-size: 2rem;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .dishCardViewButton {
+                cursor: pointer;
+                background: $brandColor1;
+                width: calc(100% - 2rem);
+                // margin: 1rem;
+                margin: 1rem;
+                border: none;
+                outline: none;
+                border-radius: 1rem;
+                color: $white;
+                font-family: $Roboto;
+                font-size: 1.25rem;
+                padding: 0.5rem 0.5rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .dishCards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: auto;
+        height: 8rem;
+        width: max-content;
+        gap: 1rem;
+
+        .dishCardMobile {
+            position: relative;
+            display: flex;
+            background: $white;
+            justify-content: space-between;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            height: 100%;
+            width: 22rem;
+            gap: 0.5rem;
+
+            .fav-button {
+                position: absolute;
+                display: flex;
+                justify-self: right;
+                z-index: 2;
+                background: transparent;
+                margin: 0.5rem;
+
+                .fav-logo-card {
+                    font-size: 1.75rem;
+                    border-color: 2px solid $danger;
+                    color: $textColor3;
+                }
+            }
+
+            .unfav-button {
+                position: absolute;
+                display: flex;
+                justify-self: right;
+                z-index: 2;
+                background: transparent;
+                margin: 0.5rem;
+
+                .unfav-logo-card {
+                    font-size: 1.75rem;
+                    border-color: $white;
+                    color: $danger;
+                }
+            }
+
+            .dishCardImg {
+                flex: 1;
+                position: relative;
+                span{
+                    display: inline !important;
+                }
+                .mobileRecipeImage {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0.5rem 0 0 0.5rem;
+                }
+            }
+
+            .dishCardContent {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin: 0.5rem;
+                justify-content: space-between;
+
+                .dishTitle {
+                    font-size: 1.125rem;
+                    font-family: $Roboto;
+                    font-weight: 400;
+                }
+
+                .dishActions {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.35rem;
+
+                    .dishPrice {
+                        font-size: 0.825rem;
+                        font-family: $Roboto;
+                        font-weight: 300;
+                        color: $textColor2;
+                    }
+
+                    .dishCardActionsContainer {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        gap: 0.5rem;
+
+                        .dishCardAddBtn {
+                            border: none;
+                            outline: none;
+                            background: $brandColor3;
+                            height: 2rem;
+                            width: 2rem;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: $white;
+                            font-size: 1.75rem;
+                            font-weight: 300;
+                        }
+
+                        .dishCardViewButton {
+                            background: $brandColor1;
+                            border: none;
+                            outline: none;
+                            width: 100%;
+                            border-radius: 1rem;
+                            color: $white;
+                            font-size: 1rem;
+                            font-family: $Roboto;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

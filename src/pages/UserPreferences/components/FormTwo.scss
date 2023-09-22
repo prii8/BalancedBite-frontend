@@ -1,0 +1,212 @@
+@import "../../../utils/variables";
+
+.formTwo {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem 2.75rem 1rem;
+   
+
+    .dieTypeContainer {
+        .radioDivContainer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+            width: 50%;
+
+            .radioCard 
+            {
+
+            margin-top: 1rem;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                width: max-content;
+                box-shadow: 0px 6px 10px 0px rgba(131, 134, 163, 0.12);
+                background: $white;
+                cursor: pointer;
+
+                &.active {
+                    background: $brandColor1;
+
+                    i {
+                        color: $textColor1;
+                    }
+
+                    p {
+                        color: $textColor1;
+                    }
+                }
+
+                .genderInput {
+
+                    width: 2rem;
+                    height: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-self: flex-end;
+                    border: 0.25rem solid $textColor4;
+                    border-radius: 50%;
+                    background: $white;
+
+                    i {
+                        display: none;
+                    }
+
+                    &.active {
+                        background: $textColor1;
+                        border-radius: 50%;
+                        width: 2rem;
+                        height: 2rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-self: flex-end;
+                        border: none;
+
+                        i {
+                            display: inline;
+                            font-size: 1.25rem;
+                            color: $white;
+                            font-weight: 700;
+                        }
+
+
+                    }
+                }
+
+                i {
+                    font-size: 3rem;
+                    color: $textColor3;
+                }
+
+                .genderType {
+                    font-size: 1.25rem;
+                    color: $textColor3;
+                    font-weight: 600;
+                    font-family: $Roboto;
+                }
+            }
+
+        }
+
+    }
+
+    .ageContainer {
+        margin-top: 1rem;
+
+        .inputLabelContainer {
+            width: 50%;
+            margin-top: 1rem;
+
+            .textInput {
+                margin-left: 0.5    rem;
+                width: 100%;
+                border: none;
+                outline: none;
+                background: transparent;
+                border-bottom: 1px solid $textColor3;
+                padding-bottom: 0.5rem;
+                font-size: 1.325rem;
+                font-family: $Roboto;
+                color: $textColor1;
+                font-weight: 400;
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .cuisineTypeContainer {
+        width: 50%;
+        margin-top: 1rem;   
+
+        .selectInput {
+            margin-top: 1rem;
+
+            &.ant-select .ant-select-selector {
+                border-radius: 999rem;
+                border: 1px solid $brandColor1;
+                background: $white;
+            }
+        }
+    }
+
+    .foodTolerances {
+        width: 100%;
+        margin-top: 1rem;
+      
+        .lastRow {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .selectInput {
+                margin-top: 0.5rem;
+                flex: 1;
+                &.ant-select .ant-select-selector {
+                    border-radius: 999rem;
+                    border: 1px solid $brandColor1;
+                    background: $white;
+                }
+            }
+
+            .buttonGroup {
+                flex: 1;
+                align-self: last baseline;
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                justify-content: flex-end;
+                gap: 2rem;
+
+                .navButton {
+                    display: flex;
+                    gap: 0.5rem;
+                    background: transparent;
+                    font-size: 1.5rem;
+                    align-items: center;
+                    color: $brandColor1;
+                    cursor: pointer;
+                    .btnText {
+                        font-size: 1.75rem;
+                        font-weight: 300;
+                    }
+
+                    i {
+                        background-color: $brandColor1;
+                        width: 2.25rem;
+                        height: 2.25rem;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        color: $white;
+                        font-size: 1rem;
+                        box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+        }
+    }
+
+    .containerTitle {
+        font-size: 1.75rem;
+        font-weight: 400;
+        color: $textColor1;
+    }
+}

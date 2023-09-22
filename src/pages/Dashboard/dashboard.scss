@@ -1,0 +1,422 @@
+@import '../../utils/_variables.scss';
+
+
+.dashboardPage {
+    margin: 3rem calc($sideBarWidthOpen - $sideBarWidthClose) 0 $sideBarWidthOpen;
+
+    .pageHeading {
+        .introHeading {
+            color: $white;
+            font-weight: 400;
+
+            strong {
+                font-weight: 500;
+                font-size: 1.375rem;
+            }
+        }
+
+        .pageTitle {
+            color: $white;
+            font-size: 2.75rem;
+        }
+    }
+
+    .contentBox {
+        background: $textColor4;
+        margin: 0.75rem -1rem 0 -1rem;
+        padding: 1.25rem;
+        border-radius: 0.5rem 0.5rem 0 0 ;
+        height: fit-content;
+
+        .boxTitle {
+            font-size: 1.5rem;
+            color: $textColor1;
+            font-weight: 400;
+        }
+
+        .progressSection {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr min-content;
+            gap: 0.75rem;
+            grid-template-areas:
+                "progressWrapper progressWrapper progressWrapper progressWrapper progressWrapper reminderWrapper reminderWrapper"
+                "progressWrapper progressWrapper progressWrapper progressWrapper progressWrapper reminderWrapper reminderWrapper"
+                "waterIntakeWrapper waterIntakeWrapper waterIntakeWrapper waterIntakeWrapper waterIntakeWrapper reminderWrapper reminderWrapper";
+
+            .progressWrapper {
+                grid-area: progressWrapper;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 1rem;
+                margin: 1rem 1rem 0 1rem;
+                
+                .progressCard {
+                    flex: 1 0 15%;
+                }
+            }
+
+            .reminderWrapper {
+                grid-area: reminderWrapper;
+                background: $white;
+                border-radius: 0.5rem;
+                margin: 1rem 1rem 0 1rem;
+                // padding: 0.75rem;
+
+                .wrapperHeading {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    color: $textColor1;
+                    margin: 0.75rem;
+                }
+            }
+
+            .waterIntakeWrapper {
+                grid-area: waterIntakeWrapper;
+                background: $white;
+                border-radius: 1rem;
+                margin: 1rem 1rem 0 1rem;
+                padding: 1rem;
+
+                .wrapperHeading {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    color: $textColor1;
+                }
+
+                .waterProgress {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 0.5rem;
+
+                    // justify-content: space-between;
+                    .waterIcon {
+                        font-size: 3rem;
+                        color: $info;
+                        margin-top: 0.25rem;
+                    }
+
+                    .addWaterButton {
+                        background: $brandColor3;
+                        outline: none;
+                        border: none;
+                        display: flex;
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        font-size: 3rem;
+                        font-weight: 200;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        border-radius: 50%;
+                        color: $white;
+                        padding-bottom: 0.125rem;
+                    }
+                }
+
+                .waterInfo {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 4.25rem;
+                    color: $textColor2;
+                    margin-top: -0.75rem;
+
+                    .addBtnInfo {
+                        margin-right: 0.25rem;
+                        color: $brandColor3;
+                    }
+                }
+            }
+        }
+
+        .recipeSection {
+            margin-top: 1rem;
+
+            .sectionHeading {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-weight: 300;
+                margin-bottom: 0.5rem;
+                color: $textColor1;
+
+                strong {
+                    font-weight: 400;
+                }
+            }
+
+            .weekSelector {
+                margin: 0rem 1rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 1rem 2rem;
+                // box-shadow: $boxShadow2;
+                border-radius: 0.5rem;
+                background: $white;
+
+                .dateAndDay {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: all 300ms ease-in-out;
+
+                    &.active {
+                        transform: scale(1.1);
+
+                        .date {
+                            font-weight: 600;
+                            color: $textColor1;
+                        }
+
+                        .day {
+                            color: $textColor1;
+                            // text-transform: uppercase;
+                            // letter-spacing: 0.125rem;
+                        }
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+                    .date {
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        color: $textColor3;
+                    }
+
+                    .day {
+                        font-weight: 400;
+                        font-size: 1.25rem;
+                        color: $textColor3;
+                    }
+                }
+            }
+
+            .dishTypeSelector {
+
+                .dishButtonContainer {
+                    margin: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .dishButton {
+                        background: $white;
+                        outline: none;
+                        border: none;
+                        border-radius: 1rem;
+                        padding: 0.5rem 0;
+                        font-weight: 400;
+                        font-family: $Roboto;
+                        border: 1px solid $textColor3;
+                        color: $textColor2;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        cursor: pointer;
+
+                        &.active {
+                            background: $brandColor1;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .recipeWrapper{
+                margin: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .dashboardPage {
+        margin: 3rem 3rem 0 $sideBarWidthClose+3rem;
+
+        .contentBox {
+            margin: 0;
+
+            .progressSection {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr max-content min-content;
+                grid-template-areas:
+                    "progressWrapper"
+                    "reminderWrapper"
+                    "waterIntakeWrapper";
+
+                .progressWrapper {
+                    // display: none;
+                    flex: 1 0 25%;
+                    justify-content: center;
+                }
+
+            }
+
+            .recipeSection {
+                .sectionHeading {
+                    font-size: 1.25rem;
+                }
+
+                .weekSelector {
+                    padding: 0.5rem;
+                    display: flex;
+                    justify-content: center;
+
+                    .dateAndDay {
+                        gap: 0.5rem;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: baseline;
+                        justify-content: space-between;
+
+                        .day {
+                            font-size: 1.125rem;
+                            color: $textColor1;
+                        }
+
+                        .date {
+                            font-size: 1.125rem;
+                            color: $textColor1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+    .dashboardPage {
+        margin: 3rem 1rem;
+        // overflow-x: hidden;
+
+        .contentBox {
+            padding:0 0 4rem 0;
+            background: transparent;
+            .boxTitle{
+                color: $white;
+                font-size: 1.5rem;
+                font-weight: 400;
+                margin-top: 1rem;
+            }
+            .progressSection {
+                grid-template-areas:
+                    "reminderWrapper"
+                    "progressWrapper"
+                    "waterIntakeWrapper";
+
+                .progressWrapper {
+                    margin: 0.5rem;
+                }
+
+                .reminderWrapper {
+                    margin: 0.5rem;
+                    .wrapperHeading{
+                        display: none;
+                    }
+                }
+
+                .waterIntakeWrapper {
+                    margin: 0.5rem;
+                    // padding: 0.425rem;
+
+                    .waterProgress {
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .waterIcon {
+                            font-size: 2rem;
+                        }
+
+                        .addWaterButton {
+                            height: 2rem;
+                            font-size: 2rem;
+                            transform: scale(0.9);
+                        }
+                    }
+
+                    .waterInfo {
+                        margin: 0;
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            margin-left: 0.5rem;
+                        }
+
+                        .addBtnInfo {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            .recipeSection {
+
+                .weekSelector{
+                    margin: 0.5rem;
+                    .dateAndDay{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 60%;
+                        .dateAndDayWrapper{
+                            display: flex;
+                            align-items: baseline;
+                        }
+                        &:hover{
+                            transform: scale(1);
+                        }
+                    }
+                }
+
+
+                .dishTypeSelector {
+                    overflow-x: auto;
+                    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+                    scrollbar-width: none; /* Hide scrollbar for Firefox */
+                    
+                    /* Hide the scrollbar for WebKit browsers (Chrome, Safari) */
+                    &::-webkit-scrollbar {
+                      display: none;
+                    }
+                    .dishButtonContainer {
+                        display: flex;
+                        justify-content: stretch;
+                        align-items: center;
+                        width: max-content;
+                        gap: 1rem;
+                        margin: 0.5rem;
+                        .dishButton {
+                            width: 10rem;
+                        }
+                    }
+                }
+
+                .recipeWrapper{
+                    margin: 0.5rem 0 0 0.5rem;
+                    overflow-x: auto;
+                    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+                    scrollbar-width: none; /* Hide scrollbar for Firefox */
+                    
+                    /* Hide the scrollbar for WebKit browsers (Chrome, Safari) */
+                    &::-webkit-scrollbar {
+                      display: none;
+                    }
+                }
+
+            }
+
+            .wrapperHeading {
+                font-size: 1.25rem !important;
+            }
+        }
+    }
+}

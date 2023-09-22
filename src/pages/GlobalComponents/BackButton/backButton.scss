@@ -1,0 +1,13 @@
+@import "../../../utils/variables";
+
+.backButton{
+    position: absolute;
+    top: 1rem !important;
+    left: 1rem !important;
+    color: $white;
+    z-index: 2;
+    background: transparent;
+    i{
+        width: 4rem;
+    }
+}

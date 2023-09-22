@@ -1,0 +1,84 @@
+@import "./src/utils/_variables.scss";
+
+.faq-section {
+    margin-top: 6vh;
+    height: fit-content;
+
+    h1 {
+        color: #323337;
+        text-align: center;
+        font-family: Oswald;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+        margin-bottom: 3vh;
+    }
+
+    p {
+        color: $textColor3;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 5vh;
+    }
+
+    details {
+        background-color: rgba(233, 233, 233, 0.2);
+        color: black;
+        font-size: 2rem;
+        margin: 1vh 0 3vh 0;
+
+        summary {
+            width: 80vw;
+            transition: height 1s ease-in-out;
+            box-shadow: 5px 5px 10px rgba(10, 22, 70, 0.12);
+            cursor: pointer;
+            display: flex;
+            padding: 30px;
+            justify-content: space-between;
+            align-items: center;
+            color: $textColor1;
+            font-family: $Roboto;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            transition: margin 350ms ease-out;
+
+            &::-webkit-details-marker {
+                display: flex;
+            }
+
+            &:after {
+                content: "▼";
+            }
+        }
+
+        &[open] summary {
+            border-bottom: 1px solid rgba(233, 233, 233, 1);
+            margin-bottom: 0.5em;
+
+            &:after {
+                content: "▼";
+                transition: all 300ms ease-out;
+                transform: rotate(180deg);
+            }
+        }
+
+        &[open] div {
+            width: 80vw;
+            color: $textColor2;
+            font-family: $Roboto;
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 0.5em 3em;
+            margin-bottom: 2vh;
+        }
+    }
+}

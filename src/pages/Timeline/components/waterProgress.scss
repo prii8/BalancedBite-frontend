@@ -1,0 +1,11 @@
+@import "../../../utils/variables";
+
+.waveContainer {
+    position: relative;
+    background: transparent;
+    border: 0.5rem solid $info;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: max-content;
+}
+

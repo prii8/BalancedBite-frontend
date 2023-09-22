@@ -1,0 +1,64 @@
+@import "../../../utils/variables";
+
+.preferencesPage {
+    margin: 3rem calc($sideBarWidthOpen - $sideBarWidthClose) 0 $sideBarWidthOpen;
+
+    .pageHeadings {
+        color: $white;
+
+        .arrowContainer {
+            display: flex;
+            gap: 1rem;
+
+        }
+
+        .stepperRow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5rem;
+
+            .stepInfo {
+                font-family: $Oswald;
+                font-size: 1rem;
+            }
+
+        }
+
+
+        .headingIntro {
+            h6 {
+                font-family: $Roboto;
+                font-weight: 500;
+                font-size: 1.5rem;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .contentBox {
+        background: $textColor4;
+        margin: 0.75rem -1rem 0 -1rem;
+        padding: 1.25rem;
+        border-radius: 0.5rem 0.5rem 0 0 ;
+        height: min-content;
+
+        .boxTitle {
+            font-size: 1.5rem;
+            color: $textColor1;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .preferencesPage{
+        margin: 1rem;
+        .contentBox{
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@import "./src/utils/_variables.scss";
+
+.container-features {
+    display: flex;
+    flex-direction: row;
+    gap: 12vw;
+    width: 100%;
+    margin-left: 15%;
+    margin-right: 10%;
+
+
+    .illustration {
+        width: 100%;
+        margin-right: 5vw;
+    }
+
+    .text-features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .primary-txt {
+            width: 24rem;
+            color: $textColor1;
+            font-family: Oswald;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 50px;
+            margin-bottom: 1.8rem;
+        }
+
+        .secondary-txt {
+            width: 27rem;
+            color: $textColor2;
+            font-family: Roboto;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .list-features {
+            font-family: $Roboto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+
+            .list{
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                color: $textColor2;
+                font-family: $Roboto;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 2rem;
+                margin-bottom: 1.8rem;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,237 @@
+@import "../../../utils/variables";
+
+
+.formThree{
+
+    .activityLevelContainer {
+        display: flex;
+        flex-direction: column;  
+        .containerTitle {
+            font-size: 1.75rem;
+            font-weight: 400;
+            color: $textColor1;
+        }
+        .radioDivContainer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+    
+            .radioCard {
+    
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                width: max-content;
+                box-shadow: 0px 6px 10px 0px rgba(131, 134, 163, 0.12);
+                background: $white;
+                cursor: pointer;
+    
+                &.active {
+                    background: $brandColor1;
+                    i{
+                        color: $textColor1;
+                    }
+                    p{
+                        color: $textColor1;
+                    }
+                }
+    
+                .genderInput {
+    
+                    width: 2rem;
+                    height: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-self: flex-end;
+                    border: 0.25rem solid $textColor4;
+                    border-radius: 50%;
+                    background: $white;
+    
+                    i {
+                        display: none;
+                    }
+    
+                    &.active {
+                        background: $textColor1;
+                        border-radius: 50%;
+                        width: 2rem;
+                        height: 2rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-self: flex-end;
+                        border: none;
+    
+                        i {
+                            display: inline;
+                            font-size: 1.25rem;
+                            color: $white;
+                            font-weight: 700;
+                        }
+    
+    
+                    }
+                }
+    
+                i {
+                    font-size: 3rem;
+                    color: $textColor3;
+                }
+    
+                .genderType {
+                    font-size: 1.25rem;
+                    color: $textColor3;
+                    font-weight: 600;
+                    font-family: $Roboto;
+                }
+            }
+    
+        }
+    
+    }
+    
+    .endGoalContainer {
+        display: flex;
+        flex-direction: column;
+        // gap: 1rem;
+        margin-top: 2rem;   
+        .containerTitle {
+            font-size: 1.75rem;
+            font-weight: 400;
+            color: $textColor1;
+        }
+        .radioDivContainer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+    
+            .radioCard {
+    
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                width: max-content;
+                box-shadow: 0px 6px 10px 0px rgba(131, 134, 163, 0.12);
+                background: $white;
+                cursor: pointer;
+    
+                &.active {
+                    background: $brandColor1;
+                    i{
+                        color: $textColor1;
+                    }
+                    p{
+                        color: $textColor1;
+                    }
+                }
+    
+                .endGoalInput {
+    
+                    width: 2rem;
+                    height: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-self: flex-end;
+                    border: 0.25rem solid $textColor4;
+                    border-radius: 50%;
+                    background: $white;
+    
+                    i {
+                        display: none;
+                    }
+    
+                    &.active {
+                        background: $textColor1;
+                        border-radius: 50%;
+                        width: 2rem;
+                        height: 2rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-self: flex-end;
+                        border: none;
+    
+                        i {
+                            display: inline;
+                            font-size: 1.25rem;
+                            color: $white;
+                            font-weight: 700;
+                        }
+    
+    
+                    }
+                }
+    
+                i {
+                    font-size: 3rem;
+                    color: $textColor3;
+                }
+    
+                .genderType {
+                    font-size: 1.25rem;
+                    color: $textColor3;
+                    font-weight: 600;
+                    font-family: $Roboto;
+                }
+            }
+    
+        }
+        
+    
+    }
+    
+    .buttonGroup {
+        flex: 1;
+        align-self: last baseline;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        justify-content: flex-end;
+        gap: 2rem;
+        margin-top: 2rem;
+    
+        .navButton {
+            display: flex;
+            gap: 0.5rem;
+            background: transparent;
+            font-size: 1.5rem;
+            align-items: center;
+            color: $brandColor1;
+            cursor: pointer;
+            .btnText {
+                font-size: 1.75rem;
+                font-weight: 300;
+            }
+    
+            i {
+                background-color: $brandColor1;
+                width: 2.25rem;
+                height: 2.25rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: $white;
+                font-size: 1rem;
+                box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import "../../../utils/variables";
+
+.bottom-bar {
+
+    background-color: $white;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    text-align: center;
+
+    position:fixed;
+
+    bottom: 0;
+
+
+    width: 100%;
+
+    height: 4rem;
+
+    border-radius: 1rem 1rem 0 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-evenly;
+
+    z-index: 12;
+}
+
+ 
+
+.mobile-icon {
+
+    font-size: 1.75rem;
+
+    padding: .5rem;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 200ms ease-in-out;
+
+    border-radius: 100%;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: $textColor2;
+
+    z-index: 12;
+
+    font-weight: 500;
+
+    width: 3.2rem;
+
+ 
+
+    a{
+
+        text-decoration: none;
+
+        color: $textColor2;
+
+    }
+}
+
+ 
+
+.active-tab {
+
+    transform: scale(1.2) translateY(-1rem);
+
+    background: $brandColor1;
+
+    border: 0.5rem solid $white;
+
+    color: white;
+
+    width: 4.2rem;
+
+    height: 4.2rem;
+
+    a{
+
+        text-decoration: none;
+
+        color: $white;
+
+    }
+
+}

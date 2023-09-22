@@ -1,0 +1,100 @@
+@import "./src/utils/_variables.scss";
+
+.main-section-container {
+
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+
+    .first-div {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+
+        .text-def {
+            padding-top: 15vh;
+            width: 38%;
+            height: auto;
+
+            .primary-text {
+                color: rgba(50, 51, 55, 1);
+                font-family: Oswald;
+                font-size: 3.125rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 4.375rem;
+            }
+
+            .secondary-text {
+                padding-top: 5vh;
+                color: rgba(133, 136, 145, 1);
+                font-family: Roboto;
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.875rem;
+            }
+
+            .div-button {
+                width: 15.625rem;
+                height: 60px;
+                flex-shrink: 0;
+                margin-top: 5vh;
+                color: #FFF;
+                font-family: Roboto;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 25px;
+                background-color: rgba(172, 199, 65, 1);
+                border: 0;
+                border-radius: 2rem;
+                box-shadow: $boxShadow4;
+                cursor: pointer;
+            }
+        }
+        .image-div-home{
+            align-content: center;
+        .image-home {
+            width: 100%;
+            height: auto;
+        }
+    }
+    }
+
+    .second-div {
+        margin-top: 7vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+
+        .container-div {
+            display: flex;
+            flex-direction: row;
+
+            img {
+                width: 5rem;
+                height: auto;
+                margin-right: 2rem;
+            }
+
+            p {
+                font-size: 1.5vw;
+                margin-right: 2vw;
+                font-family: $Roboto;
+            }
+
+            .vl {
+                border-left: 2px solid $textColor3;
+                height: 8vh;
+                border: 0;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,60 @@
+@import "./src/utils/_variables.scss";
+
+.contact-us {
+    position: absolute;
+    top: -7rem;
+    display: flex;
+    padding: 3.5rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    border-radius: 10px;
+    background: $white;
+    box-shadow: $boxShadow2;
+    margin-left: 10vw;
+
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-heading {
+    color: $textColor1;
+    font-family: Oswald;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.contact-subheading {
+    color: $textColor2;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+// .contact-div-button{
+
+// }
+.contactbutton {
+    width: 18rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background: $brandColor1;
+    color: $white;
+    font-family: $Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    // box-shadow:  $brandColor1 0px 10px 20px;
+}

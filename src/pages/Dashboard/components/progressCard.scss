@@ -1,0 +1,55 @@
+@import "../../../utils/variables";
+
+.progressCardContainer{
+    background: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+
+    .progressInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+        .progressHeading{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .progressSubheading{
+            color: $textColor2;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+.progressCardContainer{
+    background: $white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    .progressInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .progressHeading{
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .progressSubheading{
+            font-size: 0.85rem;
+            color: $textColor2;
+        }
+    }
+}
+}

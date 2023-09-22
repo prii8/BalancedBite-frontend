@@ -1,0 +1,97 @@
+@import '../../utils/variables';
+
+.splash-mobile-screen {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.splash-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vh;
+  height: 100vh;
+  object-fit: cover;
+  background-color: $white;
+}
+
+.splash-centered-text {
+  position: absolute;
+  top: 57%;
+  left: 10%;
+  transform: translateY(-50%);
+  text-align: start;
+  font-size: 24px;
+  color: $white;
+
+
+}
+
+.splash-centered-text p {
+  margin-bottom: 0.5rem;
+}
+
+
+.splash-first {
+  color: #FFF;
+  font-family: $Oswald;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 41px;
+  letter-spacing: 0.591px;
+  text-transform: uppercase;
+}
+
+.splash-second {
+  color: #FFF;
+  font-family: $Roboto;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.126px;
+}
+
+.splash-third {
+  color: #FFF;
+  font-family: $Roboto;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  /* 178.947% */
+  letter-spacing: 0.23px;
+}
+
+
+
+
+.splash-bottom-button {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 24px;
+  font-size: 1.5rem;
+  background-color: $white;
+  font-weight: 500;
+  color: $brandColor1;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: $boxShadow3;
+  height: 3rem;
+  width: 80%;
+}
+
+
+.splash-logo {
+  width: 5rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.5rem;
+  background: $white;
+  border-radius: 25%;
+  padding: 1rem;
+  box-sizing: border-box;
+}

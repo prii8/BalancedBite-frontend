@@ -1,0 +1,75 @@
+@import "../../../utils/variables";
+
+.loader-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+
+    .loader-text {
+        color: $textColor1;
+        text-align: center;
+        font-family: $Roboto;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loader-wrapper{
+        .loader-text{
+            font-size: 1.3rem;
+        }
+    }
+}
+// @keyframes load {
+//     0% {
+//         opacity: 0.08;
+//         filter: blur(5px);
+//         letter-spacing: 3px;
+//     }
+
+//     100% {}
+// }
+
+// .loaderWrapper {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 50vh;
+//     width: 100%;
+//     background-color: $white;
+//     color: #FFFFFF;
+//     z-index: 2;
+
+//     .animate {
+//         font-family: $Roboto;
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 5rem;
+//         line-height: 88px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         height: 100%;
+//         margin: auto;
+//         animation: load 800ms infinite 0s ease-in-out;
+//         animation-direction: alternate;
+//         text-shadow: 0 0 1px $brandColor1;
+//         color: $brandColor1;
+
+//         &.subheading{
+//             color: $brandColor4;
+//             font-size: 2rem;
+//         }
+//     }
+// }

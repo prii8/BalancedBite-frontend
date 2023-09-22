@@ -1,0 +1,715 @@
+@import "../../utils//variables";
+
+.profile-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+
+    .profile-heading {
+        margin-top: 2%;
+
+        .primary-heading {
+            color: $white;
+            font-family: $Roboto;
+            font-size: 1.667vw;
+            font-weight: 300;
+
+            .heading-username {
+                color: $white;
+                font-family: $Roboto;
+                font-size: 1.9vw;
+                font-weight: 600;
+            }
+        }
+
+        .heading-container {
+            display: flex;
+            flex-direction: row;
+            gap: 50vw;
+            justify-content: space-between;
+            align-items: center;
+
+            .secondary-heading {
+                color: $white;
+                font-family: $Oswald;
+                font-size: 3.33vw;
+                font-weight: 500;
+            }
+
+            .edit-button {
+                background: transparent;
+                border: 0;
+                outline: 0;
+                cursor: pointer;
+
+                .edit-logo-profile {
+                    font-size: 2vw;
+                    color: $white;
+                }
+            }
+
+            .save-button {
+                margin: 2.5vh 0;
+                width: 177.876px;
+                height: 45px;
+                font-family: $Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: $brandColor1;
+                border-radius: 3vh;
+                background-color: $white;
+                border: 2px solid $white;
+                align-self: center;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .profile-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+
+        .user-info {
+            width: 25vw;
+            height: fit-content;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 2vh;
+            border-radius: 2vh;
+            box-shadow: $boxShadow3;
+
+            .personal-info {
+                padding: 2vh 2vw;
+                display: flex;
+                flex-direction: row;
+                gap: 1vw;
+                align-items: center;
+
+                .image-div {
+                    .profile-image {
+                        width: 8vw;
+                    }
+                }
+
+                .info-div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5vh;
+
+                    .info-name {
+                        color: $textColor1;
+                        font-family: $Oswald;
+                        font-size: 1.6vw;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+
+                    .info-email {
+                        color: $textColor2;
+                        font-family: $Roboto;
+                        font-size: 1.3vw;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .header-info {
+                width: 25vw;
+                height: 4vh;
+                background-color: $textColor4;
+                display: flex;
+                padding: 1vh 1.5vw;
+
+                .header-name {
+                    color: $textColor1;
+                    font-family: $Roboto;
+                    font-size: 0.9vw;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    align-self: flex-start;
+                }
+            }
+
+            .details {
+                width: 25vw;
+                height: 6.5vh;
+                padding: 0 1.5vw;
+                background-color: $white;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .detail-label {
+                    color: $textColor2;
+                    font-family: $Roboto;
+                    line-height: 7vh;
+                    font-size: 1vw;
+                    font-weight: 300;
+                }
+
+                .detail-info {
+                    width: 8vw;
+                    background-color: $white;
+                    color: $textColor2;
+                    font-family: Roboto;
+                    font-size: 1vw;
+                    font-weight: 700;
+                    text-align: right;
+                    border: none;
+                    text-transform: capitalize;
+                }
+
+                .detail-info-editable {
+                    margin-top: 0.8vh;
+                    width: 8vw;
+                    background-color: $white;
+                    color: $textColor1;
+                    font-family: Roboto;
+                    font-size: 1vw;
+                    font-weight: 500;
+                    text-align: center;
+                    height: 5vh;
+                    border: 2px solid $brandColor1;
+                    border-radius: 2vh;
+                }
+
+                .ant-switch-checked {
+                    background-color: $brandColor1;
+                }
+
+                .switch {
+                    margin-top: 2vh;
+                }
+            }
+
+            .horizontal-line {
+                border-top: 1.8px solid $textColor4;
+            }
+        }
+
+        .other-info {
+            display: flex;
+            flex-direction: column;
+            gap: 3vh;
+
+            .meal-preferences {
+                width: 35vw;
+                height: fit-content;
+                background-color: $white;
+                border-radius: 2vh;
+                box-shadow: $boxShadow3;
+            }
+
+            .subscription-card {
+                width: 35vw;
+                height: fit-content;
+                background-color: $white;
+                display: flex;
+                flex-direction: column;
+                border-radius: 2vh;
+                box-shadow: $boxShadow3;
+
+                .plan-button {
+                    margin: 2.5vh 0;
+                    width: 10vw;
+                    height: 5vh;
+                    font-family: $Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    color: $brandColor1;
+                    border-radius: 3vh;
+                    background-color: $white;
+                    border: 2px solid #ACC741;
+                    align-self: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $brandColor1;
+                        color: $white;
+                    }
+                }
+
+            }
+
+            .header-info {
+                width: 35vw;
+                height: 5vh;
+                background-color: $textColor4;
+                display: flex;
+                padding: 1.6vh 1.5vw;
+                border-top-left-radius: 2vh;
+                border-top-right-radius: 2vh;
+
+                .header-name {
+                    color: $textColor1;
+                    font-family: $Roboto;
+                    font-size: 0.9vw;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    align-self: flex-start;
+                }
+            }
+
+            .details-end {
+                width: 35vw;
+                height: 6.5vh;
+                padding: 0 1.5vw;
+                background-color: $white;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-bottom-left-radius: 2vh;
+                border-bottom-right-radius: 3vh;
+
+                .detail-label {
+                    color: $textColor2;
+                    line-height: 7vh;
+                    font-family: $Roboto;
+                    font-size: 1vw;
+                    font-weight: 300;
+                }
+
+                .detail-info {
+                    background-color: $white;
+                    color: $textColor2;
+                    font-family: Roboto;
+                    font-size: 1vw;
+                    font-weight: 700;
+                    text-align: right;
+                    border: none;
+                    text-transform: capitalize;
+                }
+
+                .detail-info-editable {
+                    margin-top: 0.8vh;
+                    width: 8vw;
+                    background-color: $white;
+                    color: $textColor1;
+                    font-family: Roboto;
+                    font-size: 1vw;
+                    font-weight: 500;
+                    text-align: center;
+                    height: 5vh;
+                    border: 2px solid $brandColor1;
+                    border-radius: 2vh;
+                }
+            }
+
+            .details {
+                width: 35vw;
+                height: 6.5vh;
+                padding: 0 1.5vw;
+                background-color: $white;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .detail-label {
+                    color: $textColor2;
+                    font-family: $Roboto;
+                    line-height: 7vh;
+                    font-size: 1vw;
+                    font-weight: 300;
+                }
+
+                .detail-info {
+                    background-color: $white;
+                    color: $textColor2;
+                    font-family: Roboto;
+                    font-size: 1vw;
+                    font-weight: 700;
+                    text-align: right;
+                    border: none;
+                    text-transform: capitalize;
+                }
+
+                .detail-info-editable {
+                    margin-top: 0.8vh;
+                    width: 8vw;
+                    background-color: $white;
+                    color: $textColor1;
+                    font-family: Roboto;
+                    font-size: 1vw;
+                    font-weight: 500;
+                    text-align: center;
+                    height: 5vh;
+                    border: 2px solid $brandColor1;
+                    border-radius: 2vh;
+                }
+            }
+
+            .horizontal-line {
+                border-top: 1.8px solid $textColor4;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .profile-page {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        margin-bottom: 10vh;
+        .save-button {
+            margin: 0;
+            font-family: $Roboto;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: $danger;
+            border-radius: 0.5rem;
+            background-color: $white;
+            border: 1px solid $danger;
+            align-self: center;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+        }
+        .profile-heading {
+            margin-top: 4%;
+
+            .primary-heading {
+                color: $white;
+                font-family: $Roboto;
+                font-size: 6vw;
+                font-weight: 300;
+
+                .heading-username {
+                    text-transform: uppercase;
+                    color: $white;
+                    font-family: $Roboto;
+                    font-size: 7vw;
+                    font-weight: 600;
+                }
+            }
+
+            .heading-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                height: 10vh;
+
+                .secondary-heading {
+                    color: $white;
+                    font-family: $Oswald;
+                    font-size: 8vw;
+                    font-weight: 500;
+                }
+
+                .edit-button {
+                    background: transparent;
+                    border: 0;
+                    outline: 0;
+                    cursor: pointer;
+
+                    .edit-logo-profile {
+                        font-size: 8vw;
+                        color: $white;
+                    }
+                }
+
+             
+            }
+        }
+
+        .profile-cards {
+            display: flex;
+            flex-direction: column;
+
+            .user-info {
+                width: 80vw;
+                height: fit-content;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 2vh;
+                border-radius: 2vh;
+                box-shadow: $boxShadow3;
+
+                .personal-info {
+                    padding: 2vh 2vw;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1vw;
+                    align-items: center;
+
+                    .image-div {
+                        .profile-image {
+                            width: 30vw;
+                        }
+                    }
+
+                    .info-div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5vh;
+
+                        .info-name {
+                            color: $textColor1;
+                            font-family: $Oswald;
+                            font-size: 6vw;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+
+                        .info-email {
+                            color: $textColor2;
+                            font-family: $Roboto;
+                            font-size: 4vw;
+                            font-weight: 300;
+                        }
+                    }
+                }
+
+                .header-info {
+                    width: inherit;
+                    height: 4vh;
+                    background-color: $textColor4;
+                    display: flex;
+                    padding: 1vh 1.5vw;
+
+                    .header-name {
+                        color: $textColor1;
+                        font-family: $Roboto;
+                        font-size: 3.5vw;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        align-self: flex-start;
+                    }
+                }
+
+                .details {
+                    width: inherit;
+                    height: 5vh;
+                    background-color: $white;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .detail-label {
+                        color: $textColor2;
+                        font-family: $Roboto;
+                        //line-height: 7vh;
+                        font-size: 3.5vw;
+                        font-weight: 300;
+                    }
+
+                    .detail-info {
+                        width: 20vw;
+                        background-color: $white;
+                        color: $textColor2;
+                        font-family: Roboto;
+                        font-size: 3.5vw;
+                        font-weight: 700;
+                        text-align: right;
+                        border: none;
+                        text-transform: capitalize;
+                    }
+
+                    .detail-info-editable {
+                        margin-top: 0.8vh;
+                        width: 8vw;
+                        background-color: $white;
+                        color: $textColor1;
+                        font-family: Roboto;
+                        font-size: 1vw;
+                        font-weight: 500;
+                        text-align: center;
+                        height: 5vh;
+                        border: 2px solid $brandColor1;
+                        border-radius: 2vh;
+                    }
+
+                    .ant-switch-checked {
+                        background-color: $brandColor1;
+                    }
+                }
+
+                .horizontal-line {
+                    border-top: 1.8px solid $textColor4;
+                }
+            }
+
+            .other-info {
+                display: flex;
+                flex-direction: column;
+                //gap: 3vh;
+
+                .meal-preferences {
+                    width: 80vw;
+                    height: fit-content;
+                    background-color: $white;
+                    border-radius: 2vh;
+                    box-shadow: $boxShadow3;
+                }
+
+                .subscription-card {
+                    width: 80vw;
+                    height: fit-content;
+                    background-color: $white;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 2vh;
+                    box-shadow: $boxShadow3;
+
+                    .plan-button {
+                        //margin: 2.5vh 0;
+                        width: 30vw;
+                        height: 5vh;
+                        font-family: $Roboto;
+                        font-size: 4vw;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        color: $brandColor1;
+                        border-radius: 3vh;
+                        background-color: $white;
+                        border: 2px solid #ACC741;
+                        align-self: center;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $brandColor1;
+                            color: $white;
+                        }
+                    }
+
+                }
+
+                .header-info {
+                    width: inherit;
+                    height: 4vh;
+                    background-color: $textColor4;
+                    display: flex;
+                    padding: 1vh 3vw;
+
+                    .header-name {
+                        color: $textColor1;
+                        font-family: $Roboto;
+                        font-size: 3.5vw;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        align-self: flex-start;
+                    }
+                }
+
+                .details-end {
+                    width: inherit;
+                    height: 5vh;
+                    padding: 0 1.5vw;
+                    background-color: $white;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    border-bottom-left-radius: 2vh;
+                    border-bottom-right-radius: 3vh;
+
+                    .detail-label {
+                        color: $textColor2;
+                        //line-height: 7vh;
+                        font-family: $Roboto;
+                        font-size: 3.5vw;
+                        font-weight: 300;
+                        align-self: center;
+                    }
+
+                    .detail-info {
+                        background-color: $white;
+                        color: $textColor2;
+                        font-family: $Roboto;
+                        font-size: 3.5vw;
+                        font-weight: 700;
+                        text-align: right;
+                        border: none;
+                        text-transform: capitalize;
+                    }
+
+                    .detail-info-editable {
+                        margin-top: 0.8vh;
+                        width: 8vw;
+                        background-color: $white;
+                        color: $textColor1;
+                        font-family: $Roboto;
+                        font-size: 1vw;
+                        font-weight: 500;
+                        text-align: center;
+                        height: 5vh;
+                        border: 2px solid $brandColor1;
+                        border-radius: 2vh;
+                    }
+                }
+
+                .details {
+                    width: inherit;
+                    height: 5vh;
+                    background-color: $white;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .detail-label {
+                        color: $textColor2;
+                        font-family: $Roboto;
+                        //line-height: 7vh;
+                        font-size: 3.5vw;
+                        font-weight: 300;
+                    }
+
+                    .detail-info {
+                        width: 40vw;
+                        background-color: $white;
+                        color: $textColor2;
+                        font-family: $Roboto;
+                        font-size: 3.5vw;
+                        font-weight: 700;
+                        text-align: right;
+                        border: none;
+                        text-transform: capitalize;
+                    }
+
+                    .detail-info-editable {
+                        width: 30vw;
+                        background-color: $white;
+                        color: $textColor1;
+                        font-family: $Roboto;
+                        font-size: 1vw;
+                        font-weight: 500;
+                        text-align: center;
+                        height: 4vh;
+                        border: 2px solid $brandColor1;
+                        border-radius: 1.5vh;
+                    }
+
+                    .ant-switch-checked {
+                        background-color: $brandColor1;
+                    }
+                }
+
+                .horizontal-line {
+                    border-top: 1.8px solid $textColor4;
+                }
+            }
+        }
+    }
+
+    .profile-page .profile-cards .user-info .details .switch {
+        margin-top: 0;
+    }
+}

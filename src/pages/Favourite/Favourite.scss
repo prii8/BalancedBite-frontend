@@ -1,0 +1,531 @@
+@import "../../utils/variables";
+
+ 
+
+.favourite-container {
+
+  width: 100%;
+
+  overflow-x: hidden;
+
+  overflow-y: hidden;
+
+  padding: 3rem 15vw;
+
+  .Fav-heading {
+
+    .fav-first {
+
+      color: $white;
+
+      font-size: 2.75rem;
+
+    }
+
+  }
+
+ 
+
+  .favourite-box {
+
+    background: $textColor4;
+
+    margin: 0.75rem -1rem;
+
+    padding: 1.25rem 5rem 3rem 5rem;
+
+    border-radius: 0.5rem;
+
+    box-shadow: $boxShadow2;
+
+    height: fit-content;
+
+ 
+
+    .fav-box-title {
+
+      font-size: 1.5rem;
+
+      color: $textColor1;
+
+      font-weight: 400;
+
+      text-align: center;
+
+      font-family: $Oswald;
+
+      margin-bottom: 1rem;
+
+    }
+
+ 
+
+    .favourite_cards {
+
+      margin: 0 auto;
+
+      display: grid;
+
+      grid-auto-rows: auto;
+
+      grid-gap: 3rem 6rem;
+
+      font-family: $Roboto;
+
+      grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+
+ 
+
+      @media (max-width: 480px) {
+
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+      }
+
+ 
+
+    }
+
+ 
+
+ 
+
+  }
+
+ 
+
+}
+
+ 
+
+ 
+
+.vl {
+
+  width: 1px;
+
+  background-color: silver;
+
+  height: 25px;
+
+  float: left;
+
+  border: 1px ridge silver;
+
+  border-radius: 2px;
+
+}
+
+ 
+
+ 
+
+.favourite_card {
+
+  height: fit-content;
+
+  border-radius: 7px;
+
+  box-shadow: $boxShadow2;
+
+  background: #FFF;
+
+  margin-top: 0.5rem;
+
+  position: relative;
+
+ 
+
+  .fav-button {
+
+    position: absolute;
+
+    display: flex;
+
+    justify-self: right;
+
+    z-index: 2;
+
+    right: 0;
+
+    top: 0;
+
+    background: transparent;
+
+    margin: 1rem;
+
+ 
+
+    .fav-logo-card {
+
+        font-size: 2rem;
+
+        border-color: 2px solid $danger;
+
+        color: $white;
+
+    }
+
+}
+
+ 
+
+.unfav-button {
+
+    position: absolute;
+
+    display: flex;
+
+    justify-self: right;
+
+    z-index: 2;
+
+    right: 0;
+
+    top: 0;
+
+    background: transparent;
+
+    margin: 1rem;
+
+ 
+
+    .unfav-logo-card {
+
+        font-size: 2rem;
+
+        border-color: $white;
+
+        color: $danger;
+
+    }
+
+}
+
+ 
+
+  @media (max-width: 480px) {
+
+    width: 90%;
+
+    display: flex;
+
+    height: 150px;
+
+  }
+
+ 
+
+  .card__image {
+
+    width: 100%;
+
+    height: 212px;
+
+    border-radius: 7px;
+
+    position: relative;
+
+  
+
+    @media (max-width: 480px) {
+
+      width: auto;
+
+      height: 150px;
+
+    }
+
+  }
+
+}
+
+ 
+
+.recipe__info {
+
+  display: grid;
+
+  grid-template-columns: 50% 2% 45%;
+
+ 
+
+  grid-template-rows: 50% 50%;
+
+  row-gap: 5px;
+
+ 
+
+  margin-top: 1.2rem;
+
+  margin-bottom: 2rem;
+
+  align-items: center;
+
+  padding-left: 0.65rem;
+
+ 
+
+ 
+
+}
+
+ 
+
+.recipe__info>div {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+ 
+
+ 
+
+.text {
+
+  color: $textColor1;
+
+  font-family: Roboto;
+
+  font-size: 14px;
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  line-height: 14px;
+
+  letter-spacing: 0.145px;
+
+  margin-right: 0.45rem;
+
+ 
+
+}
+
+ 
+
+.price_detail {
+
+  display: flex;
+
+  justify-content: space-between;
+
+ 
+
+}
+
+ 
+
+.card__content {
+
+  color: $textColor1;
+
+  font-family: Roboto;
+
+  font-size: 18px;
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  line-height: normal;
+
+  letter-spacing: 0.18px;
+
+  text-align: center;
+
+  margin-top: 1rem;
+
+ 
+
+  @media (max-width: 480px) {
+
+ 
+
+    padding-left: 15px;
+
+    font-size: 15px;
+
+  }
+
+}
+
+ 
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+  .favourite-container {
+
+ 
+
+    .favourite-box {
+
+      width: 80vw;
+
+      margin: 0;
+
+      padding: 0 2rem 2rem 2rem;
+
+ 
+
+      .favourite_cards {
+
+        grid-gap: 2rem 2rem;
+
+      }
+
+ 
+
+    }
+
+  }
+
+}
+
+ 
+
+@media(max-width: 768px) and (min-width: 480px) {
+
+  .favourite-container {
+
+    padding: 0 4rem 0 10rem;
+
+ 
+
+    .favourite-box {
+
+      margin-top: 1rem;
+
+      width: 60vw;
+
+      margin: 0;
+
+      padding: 0 2rem 2rem 2rem;
+
+ 
+
+      .favourite_cards {
+
+        grid-gap: 2rem 2rem;
+
+      }
+
+ 
+
+    }
+
+  }
+
+}
+
+ 
+
+ 
+
+@media (max-width: 480px) {
+
+  .favourite-container {
+
+    margin: 0;
+
+    padding: 3rem 10vw;
+
+ 
+
+    .favourite-box {
+
+      margin-top: 3rem;
+
+      padding: 0;
+
+ 
+
+      .fav-box-title {
+
+        font-size: 1.2rem;
+
+        grid-gap: 1rem !important;
+
+      }
+
+ 
+
+      .favourite_cards {
+
+        place-items: center;
+
+ 
+
+        .favourite_card{
+
+ 
+
+          .unfav-button{
+
+            left: 0;
+
+          }
+
+ 
+
+          .fav-button{
+
+            left: 0;
+
+          }
+
+ 
+
+          .card__image{
+
+            width: 40vw;
+
+          }
+
+        }
+
+      }
+
+ 
+
+    }
+
+  }
+
+ 
+
+  .text {
+
+ 
+
+    font-size: 0.9rem;
+
+    margin-bottom: 0.2rem;
+
+  }
+
+ 
+
+  .recipe__info {
+
+    display: block;
+
+    padding-left: 2rem;
+
+  }
+
+ 
+
+  .vl {
+
+    display: none !important;
+
+  }
+
+}

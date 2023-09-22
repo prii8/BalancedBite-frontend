@@ -1,0 +1,318 @@
+@import "./src/utils/_variables.scss";
+
+.test-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3vh;
+    margin-bottom: 5vh;
+
+    .header-test {
+        color: #323337;
+        text-align: center;
+        font-family: Oswald;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+    }
+
+    .sec-test {
+        width: 555px;
+        color: rgb(195, 196, 195);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+
+.slick-dots slick-dots-bottom {
+    z-index: 1;
+}
+.slick-dots li {
+    width: 30px;
+}
+.slick-dots li button {
+    height: 4px;
+    width: 10px;
+}
+.slick-dots li.slick-active button {
+    background: $brandColor1 !important;
+}
+.slick-dots li button{
+    height: 10px;
+    background: $textColor2 !important;
+}
+
+.testimonial-container {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30vh;
+
+    .test-card-focused {
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        border-radius: 10px;
+        border: 2px solid #ACC741;
+        background: #FFF;
+        height: fit-content;
+        padding: 1vh 1.5vw;
+
+        .primary-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .first-div {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+
+                .user-image {
+                    img {
+                        width: 5vw;
+                        margin: 1vh 1vw;
+                    }
+                }
+
+                .user-info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .user-name {
+                        color: $textColor1;
+                        text-align: center;
+                        font-family: Roboto;
+                        font-size: 1.2rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 30px;
+                    }
+
+                    .user-location {
+                        color: #858891;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                    }
+                }
+
+            }
+
+            .user-rating {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 0.5rem;
+                align-items: center;
+
+                .text-rating {
+                    color: #0B132A;
+                    font-family: $Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+
+                .rating-star {
+                    color: rgba(255, 210, 45, 1);
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+        }
+
+        .secondary-div {
+            color: #858891;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+
+    .test-card {
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        border-radius: 10px;
+        border: 2px solid #ACC741;
+        background: #FFF;
+        height: fit-content;
+        padding: 1vh 1.5vw;
+
+        .primary-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .first-div {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+
+                .user-image {
+                    img {
+                        width: 5vw;
+                        margin: 1vh 1vw;
+                    }
+                }
+
+                .user-info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .user-name {
+                        color: $textColor1;
+                        text-align: center;
+                        font-family: Roboto;
+                        font-size: 1.2rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 30px;
+                    }
+
+                    .user-location {
+                        color: #858891;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                    }
+                }
+
+            }
+
+            .user-rating {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 0.5rem;
+                align-items: center;
+
+                .text-rating {
+                    color: #0B132A;
+                    font-family: $Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+
+                .rating-star {
+                    color: rgba(255, 210, 45, 1);
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+        }
+
+        .secondary-div {
+            color: #858891;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+// .user-testimonial {
+//     background-color: rgba(197, 227, 153, 1);
+
+//     .slick-dots slick-dots-bottom {
+//         z-index: 1;
+//         .ant-carousel .slick-dots li button {
+//             background: #ff4ef6;
+//             opacity: 0.4;
+//         }
+
+//         .ant-carousel .slick-dots li.slick-active button {
+//             opacity: 1;
+//             background: #ff4ef6;
+//         }
+//     }
+
+//     .testimonial-container {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//         align-content: center;
+//         height: fit-content;
+
+//         .testimonial-card {
+//             border-radius: 0.6vw;
+//             margin-top: 6vh;
+//             margin-left: 15vw;
+//             width: 70vw;
+//             height: 35vh;
+//             background-color: white;
+//             display: flex;
+//             flex-direction: column;
+//             padding: 2vh 2vw;
+//             // box-shadow: 10px 10px 10px rgba(10, 22, 70, 0.12);
+
+//             .first-div-test {
+//                 display: flex;
+//                 flex-direction: row;
+//                 align-content: center;
+
+//                 .logo-test {
+//                     width: 10vw;
+//                 }
+
+//                 .user-info {
+//                     margin-top: 4vh;
+//                     margin-left: 3vw;
+
+
+//                     .text-first-div {
+//                         font-size: 2rem;
+//                         align-self: center;
+//                     }
+
+//                     .goal-test {
+//                         font-size: 1.5vw;
+//                         color: rgba(133, 136, 145, 1);
+//                     }
+//                 }
+//             }
+
+//             .second-div-test {
+//                 font-size: 1.2vw;
+
+//             }
+//         }
+//     }
+// }
+// .slick-dots li button:before{
+//     background-color: #fff;
+// }
+// .slick-dots li.slick-active button:before{
+//     background-color: #000;
+// }

@@ -1,0 +1,25 @@
+.appBg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("../../assets/images/Web-Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+}
+
+.mobileBg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("../../assets/images/mobileBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100svh;
+    width: 100vw;
+    z-index: -10;
+}

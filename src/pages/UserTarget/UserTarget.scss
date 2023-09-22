@@ -1,0 +1,154 @@
+@import "../../utils/variables";
+
+.target-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+
+    .container-target {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 1.5rem;
+
+        .text-target {
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .first-head-target {
+                color: $white;
+                font-family: $Roboto;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 34px;
+                letter-spacing: 0.23px;
+                text-align: left;
+            }
+
+            .second-head-target {
+                color: $white;
+                font-family: Oswald;
+                font-size: 3.5rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 41px;
+                letter-spacing: 0.591px;
+                text-transform: uppercase;
+            }
+        }
+
+        .card-target {
+            background-color: $textColor4;
+            height: max-content;
+            flex-shrink: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+
+
+            .text-card {
+                color: $textColor1;
+                font-family: $Roboto;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 21px;
+                letter-spacing: 0.169px;
+                text-transform: uppercase;
+            }
+
+            .card-goals {
+                background-color: $white;
+                height: max-content;
+                width: 46vw;
+
+                .target-hr {
+                    border: 1px solid rgba(233, 233, 233, 1);
+                }
+
+                .goal-column {
+                    padding: 1.5rem 2.5rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .column-text {
+                        color: $textColor2;
+                        font-family: Roboto;
+                        font-size: 1.2rem;
+                        font-style: normal;
+                        font-weight: 300;
+                        letter-spacing: 0.3px;
+                    }
+
+                    .column-value {
+                        color: $textColor2;
+                        text-align: right;
+                        font-family: Roboto;
+                        font-size: 1.2rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        letter-spacing: 0.3px;
+                    }
+                }
+            }
+
+            .target-button {
+                background-color: $brandColor1;
+                width: 27.122rem;
+                height: 3.5rem;
+                flex-shrink: 0;
+                color: var(--white, #FFF);
+                text-align: center;
+                font-family: Roboto;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border: none;
+                outline: none;
+                border-radius: 2rem;
+                align-self: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+    
+    .target-page .container-target .card-target{
+        padding: 0;
+        background: transparent;
+    }
+    .target-page .container-target .text-target{
+        margin-left: 0;
+    }
+    .target-page .container-target .card-target .card-goals{
+        width: 75vw;
+        align-self: center;
+        border-radius: 0.5rem;
+    }
+    .target-page .container-target .card-target .target-button{
+        width: 18rem;
+    }
+    .target-page .container-target .card-target > div{
+        padding-bottom: 10px;
+        text-align: center  ;
+    }
+
+    .target-page .container-target .text-target .second-head-target{
+        font-size: 2rem;
+    }
+}
